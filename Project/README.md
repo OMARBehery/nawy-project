@@ -1,5 +1,7 @@
 # nawy-project
 =======
+
+
 how to run the project :
 1) navigate to the server folder and npm install to install all dependencies and node modules
 2) run npm app to start the server on localhost 5000
