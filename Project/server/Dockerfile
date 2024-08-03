@@ -2,11 +2,13 @@
 FROM node:14-alpine
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /server
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
+RUN npm install nodemon 
 
+# RUN npm install nodemon
 # Install dependencies
 RUN npm install
 
