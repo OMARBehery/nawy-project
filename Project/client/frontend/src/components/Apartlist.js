@@ -2,7 +2,7 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import { Button,Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css' ;
 import img from './landing-background.webp'
 import { Link } from "react-router-dom";
 

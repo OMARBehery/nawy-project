@@ -8,12 +8,13 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # Install dependencies
-
+RUN npm install bootstrap
 RUN npm install
 
 RUN npm install react react-dom  --save
 
 RUN npm i react-scripts
+
 
 # Copy the entire project
 COPY . .
