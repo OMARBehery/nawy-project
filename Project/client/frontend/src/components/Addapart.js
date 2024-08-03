@@ -32,7 +32,8 @@ const apart={title,discription,price,location,base64String}
 console.log(apart);
 setIsPending(true);
 
-fetch('/add-apart',{
+fetch('http://localhost:5000/add-apart',{
+  
   method:'POST',
   headers:{"content-type":"application/json"},
   body:JSON.stringify(apart)

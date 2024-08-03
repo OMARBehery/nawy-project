@@ -23,7 +23,11 @@ const Details = () => {
   useEffect(() => {
     
 
-      fetch('/apart/'+id)
+      fetch('http://localhost:5000/apart/'+id,{
+        headers:{
+            "accepts":"application/json"
+        }
+    })
       .then(res => {
       
         return res.json();

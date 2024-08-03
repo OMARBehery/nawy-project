@@ -13,7 +13,11 @@ const [apart,setApart]=useState(null)
 const [isPending,setIsPending]=useState(true)
   useEffect(()=>{
  
-    fetch('/apart-list').then(res => {
+    fetch('http://localhost:5000/apart-list',{
+      headers:{
+          "accepts":"application/json"
+      }
+  }).then(res => {
       
     // console.log(res.json());
   
